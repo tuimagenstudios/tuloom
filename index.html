@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#05091a">
+  <title>TULOOM para Android</title>
+  <link rel="icon" href="icon-192.png">
+  <style>
+    @font-face { font-family: "Space Grotesk"; src: url(fonts/space-grotesk-latin-400-normal.woff2) format("woff2"); font-weight: 400; }
+    @font-face { font-family: "Space Grotesk"; src: url(fonts/space-grotesk-latin-700-normal.woff2) format("woff2"); font-weight: 700; }
+    @font-face { font-family: "JetBrains Mono"; src: url(fonts/jetbrains-mono-latin-400-normal.woff2) format("woff2"); }
+    :root {
+      --deep: #05091a; --navy: #0d1b3e; --panel: #0a1430; --line: #1c2c55;
+      --cyan: #00e0ff; --white: #e8f4ff; --muted: #8ba3cc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--deep); color: var(--white);
+      font: 16px/1.5 "Space Grotesk", system-ui, sans-serif;
+      background-image: radial-gradient(700px 420px at 50% -80px, #14284f, transparent);
+      min-height: 100vh;
+    }
+    main { max-width: 560px; margin: 0 auto; padding: 28px 16px 48px; }
+    .mono { font-family: "JetBrains Mono", monospace; letter-spacing: .18em; text-transform: uppercase; font-size: 11px; color: var(--muted); }
+    header { display: flex; align-items: center; gap: 12px; }
+    header img { width: 52px; height: 52px; border-radius: 4px; }
+    .brand { font-weight: 700; font-size: 28px; line-height: 1; }
+    .brand span { color: var(--cyan); }
+    h1 { font-size: 34px; line-height: 1.1; margin: 32px 0 8px; letter-spacing: -.02em; }
+    h1 b { color: var(--cyan); }
+    p.lead { color: var(--muted); margin: 0 0 24px; }
+    .btn {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      background: var(--cyan); color: var(--deep); text-decoration: none;
+      font-weight: 700; font-size: 18px; padding: 18px; border-radius: 4px;
+      box-shadow: 0 0 28px rgba(0,224,255,.35);
+    }
+    .btn svg { width: 22px; height: 22px; }
+    .meta { text-align: center; margin-top: 10px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 18px; margin-top: 18px; }
+    .card h2 { font-size: 18px; margin: 0 0 12px; }
+    ol { margin: 0; padding-left: 22px; }
+    ol li { margin-bottom: 10px; }
+    ol li::marker { color: var(--cyan); font-family: "JetBrains Mono", monospace; }
+    ul { margin: 0; padding-left: 20px; color: var(--muted); }
+    ul li { margin-bottom: 6px; }
+    strong { color: var(--white); }
+    footer { text-align: center; margin-top: 32px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon-192.png" alt="">
+    <div>
+      <div class="brand">TU<span>LOOM</span></div>
+      <div class="mono">Por Tu Imagen Estudio</div>
+    </div>
+  </header>
+
+  <h1>Una idea. Dale a grabar<b>.</b></h1>
+  <p class="lead">Graba la pantalla de tu celular con tu cámara en un círculo y tu firma. Para Android 10 o más nuevo.</p>
+
+  <a class="btn" href="https://github.com/tuimagenstudios/tuloom/releases/download/v1.0.0/TULOOM-1.0.0.apk">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>
+    Descargar TULOOM para Android
+  </a>
+  <div class="meta mono">Versión 1.0.0 · APK · 8,9 MB</div>
+
+  <section class="card">
+    <h2>Cómo instalarla</h2>
+    <ol>
+      <li>Toca <strong>Descargar</strong>. Si Chrome avisa que el archivo puede ser dañino, elige <strong>Descargar de todas formas</strong>.</li>
+      <li>Abre el archivo <strong>TULOOM-1.0.0.apk</strong> desde la notificación o en <strong>Descargas</strong>.</li>
+      <li>La primera vez, Android pide permiso: <strong>Configuración → Permitir de esta fuente</strong>, y vuelve atrás.</li>
+      <li>Toca <strong>Instalar</strong>. Si aparece Google Play Protect, elige <strong>Instalar de todas formas</strong> (es una app propia, no está en Play Store).</li>
+      <li>Abre TULOOM, elige un modo y pulsa <strong>Empezar a grabar</strong>.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>La primera vez que grabes</h2>
+    <ul>
+      <li>Permite <strong>cámara</strong>, <strong>micrófono</strong> y <strong>notificaciones</strong>.</li>
+      <li>Activa <strong>Mostrar sobre otras apps</strong> para ver tu burbuja de cámara y los controles mientras usas otras apps.</li>
+      <li>Cuando Android pregunte, elige <strong>Pantalla completa</strong> y pulsa <strong>Iniciar</strong>.</li>
+      <li>Tus vídeos quedan en <strong>Películas/TULOOM</strong> y en tu Galería. Nada se sube a internet.</li>
+    </ul>
+  </section>
+
+  <footer class="mono">TULOOM 1.0 · Hecho para crear</footer>
+</main>
+</body>
+</html>
